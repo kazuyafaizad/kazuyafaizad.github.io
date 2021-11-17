@@ -19,7 +19,10 @@
   <body class="logo-big">
     
 <div class="container">
-	<button class="btn-toggle btn" data-toggle="button" aria-pressed="false">Toggle Dark-Mode</button>
+	<label class="switch btn-toggle">
+	  <input type="checkbox">
+	  <span class="slider"></span>
+	</label>
 	<div class="row">
 		<div class="col-md-4 mx-auto">
 			<a href="https://github.com/kazuyafaizad">
@@ -61,15 +64,13 @@
   <script>
 	  const btn = document.querySelector(".btn-toggle");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-btn.textContent = prefersDarkScheme.matches ?  "Light Mode" :  "Dark Mode";
+	
 	  
 btn.addEventListener("click", function () {
   if (prefersDarkScheme.matches) {
     document.body.classList.toggle("light-theme");
-	btn.textContent = "Dark Mode";
   } else {
     document.body.classList.toggle("dark-theme");
-	  btn.textContent = "Light Mode";
   }
 });
 
