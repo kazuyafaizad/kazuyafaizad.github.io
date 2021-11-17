@@ -64,7 +64,7 @@
   <script>
 	  const btn = document.querySelector(".btn-toggle");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-	document.querySelector(".switch input").checked = prefersDarkScheme ? false : true;
+	document.querySelector(".switch input").checked = prefersDarkScheme ? true : false;
 	  
 btn.addEventListener("click", function () {
   if (prefersDarkScheme.matches) {
