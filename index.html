@@ -61,14 +61,15 @@
   <script>
 	  const btn = document.querySelector(".btn-toggle");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-prefersDarkScheme.matches ? btn.textContent = "dark mode" : btn.textContent = "light mode";
+btn.textContent = prefersDarkScheme.matches ?  "Dark Mode" :  "Light Mode";
 	  
 btn.addEventListener("click", function () {
   if (prefersDarkScheme.matches) {
     document.body.classList.toggle("light-theme");
-	 
+	btn.textContent = "Dark Mode";
   } else {
     document.body.classList.toggle("dark-theme");
+	  btn.textContent = "Light Mode";
   }
 });
 
