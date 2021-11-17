@@ -4,6 +4,10 @@
 *{
 font-family: 'Roboto', sans-serif;
 }
+ul li{
+margin:3px;
+line-height:1rem;
+}
 header {
 	position:relative;
 	left:0;
