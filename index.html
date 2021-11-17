@@ -66,7 +66,7 @@
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 	document.querySelector(".switch input").checked = prefersDarkScheme ? true : false;
 	  
-btn.addEventListener("click", function () {
+btn.addEventListener("change", function () {
   if (prefersDarkScheme.matches) {
     document.body.classList.toggle("light-theme");
 	  document.querySelector(".switch input").checked =  true;
