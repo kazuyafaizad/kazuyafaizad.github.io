@@ -115,7 +115,7 @@
 <li>In the target project (&#x3C;YOUR USERNAME>.github.io) repo, create <code>gh-pages</code> branch then go to Settings > Pages and set to <code>gh-pages</code> branch for GitHub Pages and set directory to <code>/</code> (root).</li>
 <li>Set the correct config <code>site</code> in <code>astro.config.mjs</code>.</li>
 <li>Create the file <code>.github/workflows/main.yml</code> and add in the yaml below. Make sure to edit in your own details.</li>
-<li>In GitHub go to Settings > Developer settings > Personal Access tokens. Generate a new token with repo permissions.</li>
+<li>In GitHub go to Settings > Developer settings > Personal Access tokens. Generate a new token with repo and workflow permissions.</li>
 <li>In the astro project repo (not &#x3C;YOUR USERNAME>.github.io) go to Settings > Secrets and add your new personal access token with the name <code>API_TOKEN_GITHUB</code>.</li>
 <li>When you push changes to the astro project repo CI will deploy them to &#x3C;YOUR USERNAME>.github.io for you.</li>
 </ol><pre class="astro-code" style="background-color: #0d1117; overflow-x: auto;"><code><span class="line"><span style="color: #8B949E"># Workflow to build and deploy to your GitHub Pages repo.</span></span>
