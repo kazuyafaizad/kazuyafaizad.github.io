@@ -58,14 +58,12 @@
 
 
 <body class="antialiased h-full">
-  <link rel="stylesheet" href="/assets/index.75874877.css" /><script type="module">gsap.registerPlugin(ScrollTrigger);gsap.from(".anim_work",{y:200,opacity:0,duration:.5,scrollTrigger:".anim_work",stagger:.3});gsap.from(".bounce",{opacity:0,delay:.5,duration:3});
+  <link rel="stylesheet" href="/assets/index.6cae7ccb.css" />
+<link rel="stylesheet" href="/assets/blog-first-post-index.b192f489.css" /><script type="module">gsap.registerPlugin(ScrollTrigger);gsap.from(".anim",{x:500,opacity:0,duration:1,scrollTrigger:".anim",stagger:1});gsap.from(".bounce>img",{y:-50,repeat:-1,duration:3,yoyo:!0});
 </script><main class="w-full min-h-screen relative flex flex-col justify-between overflow-x-hidden">
-    <header class="w-full sticky top-0 z-20 shadow bg-white">
+    <header class="w-full sticky top-0 z-20 shadow bg-white border-b border-blue-100" id="header">
   <nav class="container flex relative w-full mx-auto justify-between py-6">
     <div class="flex gap-3">
-      <a href="/" class="hover:text-gray-500">
-        <h2>Top</h2>
-      </a>
       <a href="/" class="hover:text-gray-500 hidden">
         <h2>About</h2>
       </a>
@@ -92,38 +90,63 @@
   </nav>
 </header>
     <div class="container">
-      <picture class="bounce inset-0 h-grp-10 justify-center flex astro-L4E2UYFH">
-	<source type="image/avif" srcset="/_image/img/IMG_0699_450x450.avif 450w,/_image/img/IMG_0699_900x900.avif 900w" class="astro-L4E2UYFH"><source type="image/webp" srcset="/_image/img/IMG_0699_450x450.webp 450w,/_image/img/IMG_0699_900x900.webp 900w" class="astro-L4E2UYFH"><source type="image/png" srcset="/_image/img/IMG_0699_450x450.png 450w,/_image/img/IMG_0699_900x900.png 900w" class="astro-L4E2UYFH">
-	<img width="900" height="900" src="/_image/img/IMG_0699_900x900.png" class="astro-L4E2UYFH" loading="lazy" decoding="async">
+      <div class="row mb-4 lg:px-5 mt-12 flex-col lg:flex-row">
+        <div class="lg:w-grp-5 flex flex-col items-center justify-center">
+          <h1 class="text-5xl lg:text-7xl font-serif text-gray-800">
+            <span class="anim">WEB</span><br><span class="lg:ml-grp-3 lg:mt-grp-3 anim">DEV</span><br><span class="lg:ml-grp-4 lg:mt-grp-4 anim">ARTISAN
+            </span>
+          </h1>
+          <a href="#about"><div class="self-stretch px-4 py-2 text-sm text-center uppercase border border-black hover:cursor-pointer lg:max-w-gr-11 my-gr-8 hover:bg-blue-100">
+              DISCOVER
+            </div>
+          </a>
+        </div><div class="lg:w-grp-4 bg-blue-100 flex justify-end">
+          <picture class="bounce astro-L4E2UYFH">
+	<source type="image/avif" srcset="/_image/img/IMG_0712_150x267.avif 150w,/_image/img/IMG_0712_350x622.avif 350w" class="astro-L4E2UYFH"><source type="image/webp" srcset="/_image/img/IMG_0712_150x267.webp 150w,/_image/img/IMG_0712_350x622.webp 350w" class="astro-L4E2UYFH"><source type="image/png" srcset="/_image/img/IMG_0712_150x267.png 150w,/_image/img/IMG_0712_350x622.png 350w" class="astro-L4E2UYFH">
+	<img width="350" height="622" src="/_image/img/IMG_0712_350x622.png" class="astro-L4E2UYFH" loading="lazy" decoding="async">
 </picture>
 
 
-    </div>
-    <div class="bg-gray-300 py-gr-6 w-full sticky top-0 hidden">
-      <div class="container w-full mx-auto">PROFILE</div>
-    </div>
-
-    <section class="w-full container mx-auto row pt-32 h-grp-9 flex-col lg:flex-row px-gr-6">
-      <div class="w-grp-5 justify-center items-center">
-        <h1 class="text-5xl lg:text-6xl">
-          WEB ARTIST <span class="serif text-7xl font-bold text-red-500">✕</span>
-          DEVELOPER
-        </h1>
+        </div>
       </div>
 
-      <div class="lg:w-grp-4 flex flex-col gap-5 pt-gr-9 lg:pt-0 text-lg">
-        <h2>born 1991, currently in Selangor</h2>
-        <p>Kazuya Faizad was pen name since highschool.</p>
-        <p>Married with Japanese. Have 1 child atm</p>
-        <p>I like to making arts and I assume coding also arts</p>
-        <p>Sorry, currently this site is still in development</p>
-      </div>
-    </section>
+      <section class="lg:mt-52 px-3">
+        <h2 class="text-center font-serif text-3xl mt-gr-9 mb-gr-7">
+          <span class="border-b border-black">CONCEPT</span>
+        </h2>
+        <p class="mx-auto lg:px-72">
+          The concept of this profile is luxury with blue accent. This is the color pallete that I think is harmony
+          enough to create balance. For the illustration, I choose floating K(Original Character's Name) with again, the
+          blue accent as background. The attire is combination of traditional and cybernatic. Thus the concept is more
+          from these elements. I can say this profile shows my personality. Do you noticed the golden ratio? I use
+          tailwind golden ratio to achieve this.
+        </p>
 
-    <section class="h-grp-10 relative overflow-hidden py-gr-8 text-center">
+        <h2 class="text-center font-serif text-3xl mt-gr-9 mb-gr-7" id="about">
+          <span class="border-b border-black">ABOUT</span>
+        </h2>
+        <p class="mx-auto lg:px-72">
+          Born 1991, Perlis. Can call me Faizad, Married with Japanese, with 1 child at the moment. I am currently
+          creating websites for a Japanese company. My <br>日本語まだペラペラではありませんがどんどん上手になります。<br> がんばります。。
+        </p>
+        <div class="mx-auto lg:px-72">
+          <p>You guys can check up my other links</p>
+          <ul>
+            <li><a href="https://github.com/kazuyafaizad" class="underline text-orange-400">Github</a></li>
+            <li><a href="https://www.instagram.com/karamelxyz" class="underline text-orange-400">Instagram</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/mohd-norfaizad-farhan/" class="underline text-orange-400">LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <section id="contact" class="mt-gr-9 mb-gr-7 text-center">
       <h2 class="text-4xl">INTERESTED TO COLLABORATE?</h2>
-      <p>Contact me at <a href="mailto:kazuyafaizad@gmail.com">kazuyafaizad@gmail.com</a></p>
+      <p>Do contact me at <a href="mailto:kazuyafaizad@gmail.com">kazuyafaizad@gmail.com</a></p>
     </section>
+
     <footer class="text-center py-gr-4 bg-gray-500 text-gray-100"><small>Kagi/kzyfzd © 2022</small></footer>
   </main>
 </body>
