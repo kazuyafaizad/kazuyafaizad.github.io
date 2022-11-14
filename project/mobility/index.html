@@ -54,13 +54,13 @@
 
 
     
-  <link rel="stylesheet" href="/assets/404.6f1f80d9.css" />
+  <link rel="stylesheet" href="/assets/404.b53941fd.css" />
 <link rel="stylesheet" href="/assets/freelance.23326927.css" />
 <link rel="stylesheet" href="/assets/freelance.8acf72cf.css" /><script type="module">gsap.registerPlugin(ScrollTrigger);document.addEventListener("DOMContentLoaded",function(){gsap.utils.toArray(".gsap").forEach(r=>{const e=r.querySelectorAll(".gsap-from-bottom");ScrollTrigger.create({trigger:r,start:"top 70%",stagger:1,onEnter:()=>[gsap.from(e,{yPercent:100,autoAlpha:0,stagger:1,duration:1.2,ease:"linear"})]})})});
 </script></head>
   
     <header class="w-full sticky top-0 z-20 shadow bg-white border-b border-blue-100" id="header">
-  <nav class="container flex relative w-full mx-auto justify-between py-6">
+  <nav class="container hidden md:flex relative w-full mx-auto justify-between py-6">
     <div class="flex gap-3">
       <a href="/about" class="hover:text-gray-500">
         <h2 class="text-base">About Me</h2>
@@ -70,11 +70,11 @@
         <h2 class="text-base">Works</h2>
       </a>
 
-      <a href="/" class="hover:text-gray-500 hidden">
+      <a href="/blog" class="hover:text-gray-500 hidden">
         <h2 class="text-base">Blog</h2>
       </a>
 
-      <a href="/" class="hover:text-gray-500 hidden">
+      <a href="/contact" class="hover:text-gray-500 hidden">
         <h2 class="text-base">Contact</h2>
       </a>
     </div>
@@ -88,7 +88,61 @@
       </a>
     </div>
   </nav>
+
+  <nav class="container block md:hidden relative w-full mx-auto py-6 max-w-sm" id="nav">
+    <div class="md:hidden flex items-center justify-center justify-between">
+      <div></div>
+      <a href="/" class="text-decoration-none"><div class="font-bold text-md">KAZUYA FAIZAD</div></a>
+
+      <div class="space-y-2">
+        <span class="block w-5 h-0.5 bg-gray-600" id="burger1"></span>
+        <span class="block w-8 h-0.5 bg-gray-600" id="burger2"></span>
+        <span class="block w-8 h-0.5 bg-gray-600" id="burger3"></span>
+      </div>
+    </div>
+  </nav>
 </header>
+<!-- mobile menu -->
+<ul class="pt-8 mobile-menu bg-white w-full h-0 hidden overflow-hidden mt-1 backdrop-blur-md text-xl bg-opacity-75">
+  <li>
+    <a href="/about" class="flex border-b border-black py-5 hover:bg-golden transition duration-300 justify-center">About Me</a>
+  </li>
+  <li>
+    <a href="/works" class="flex border-b border-black py-5 hover:bg-golden transition duration-300 justify-center">Works</a>
+  </li>
+  <li>
+    <a href="https://github.com/kazuyafaizad" class="flex border-b border-black py-5 hover:bg-golden transition duration-300 justify-center">Github</a>
+  </li>
+  <li>
+    <a href="https://www.instagram.com/kazuyafaizad_/" class="flex border-b border-black py-5 hover:bg-golden transition duration-300 justify-center">Instagram</a>
+  </li>
+</ul>
+
+<script>
+  var menu = new TimelineMax({ paused: true, reversed: true });
+
+  menu
+    .to("#burger1", 0.2, { rotation: 50, ease: Sine.easeInOut, width: "100%" }, "cross")
+    .to("#burger2", 0.2, { scale: 0 }, "cross")
+    .to("#burger3", 0.2, { rotation: -50, ease: Sine.easeInOut, x: 0, y: -20 }, "cross")
+    .to(".mobile-menu", 0.6, {
+      height: "100vh",
+      display: "block",
+      ease: Sine.easeInOut,
+    });
+
+  function menuIn() {
+    if (menu.reversed()) {
+      menu.play();
+    } else {
+      menu.reverse();
+    }
+  }
+
+  document.querySelector("#nav").addEventListener("click", function () {
+    menuIn();
+  });
+</script>
     <header style="background-image:url(undefined)" class="hero astro-YWYOOOAR">
       <h1 class="title astro-YWYOOOAR">Mobility Suites</h1>
     </header>

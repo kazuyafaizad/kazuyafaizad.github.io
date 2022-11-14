@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="astro-OEVHHUU5">
+<html lang="en" class="astro-7SIMDF2F">
   <head>
     <!-- Google tag (gtag.js) --><!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-JH8QK0ZKRH" is:inline></script>
 <script is:inline>
@@ -53,13 +53,13 @@
 
 
     
-  <link rel="stylesheet" href="/assets/404.6f1f80d9.css" />
+  <link rel="stylesheet" href="/assets/404.b53941fd.css" />
 <link rel="stylesheet" href="/assets/freelance.23326927.css" />
-<link rel="stylesheet" href="/assets/about.4379eeb7.css" /><script type="module">gsap.registerPlugin(ScrollTrigger);document.addEventListener("DOMContentLoaded",function(){gsap.utils.toArray(".gsap").forEach(r=>{const e=r.querySelectorAll(".gsap-from-bottom");ScrollTrigger.create({trigger:r,start:"top 70%",stagger:1,onEnter:()=>[gsap.from(e,{yPercent:100,autoAlpha:0,stagger:1,duration:1.2,ease:"linear"})]})})});
+<link rel="stylesheet" href="/assets/about.0977da1b.css" /><script type="module">gsap.registerPlugin(ScrollTrigger);document.addEventListener("DOMContentLoaded",function(){gsap.utils.toArray(".gsap").forEach(r=>{const e=r.querySelectorAll(".gsap-from-bottom");ScrollTrigger.create({trigger:r,start:"top 70%",stagger:1,onEnter:()=>[gsap.from(e,{yPercent:100,autoAlpha:0,stagger:1,duration:1.2,ease:"linear"})]})})});
 </script></head>
   
     <header class="w-full sticky top-0 z-20 shadow bg-white border-b border-blue-100" id="header">
-  <nav class="container flex relative w-full mx-auto justify-between py-6">
+  <nav class="container hidden md:flex relative w-full mx-auto justify-between py-6">
     <div class="flex gap-3">
       <a href="/about" class="hover:text-gray-500">
         <h2 class="text-base">About Me</h2>
@@ -69,11 +69,11 @@
         <h2 class="text-base">Works</h2>
       </a>
 
-      <a href="/" class="hover:text-gray-500 hidden">
+      <a href="/blog" class="hover:text-gray-500 hidden">
         <h2 class="text-base">Blog</h2>
       </a>
 
-      <a href="/" class="hover:text-gray-500 hidden">
+      <a href="/contact" class="hover:text-gray-500 hidden">
         <h2 class="text-base">Contact</h2>
       </a>
     </div>
@@ -87,27 +87,81 @@
       </a>
     </div>
   </nav>
+
+  <nav class="container block md:hidden relative w-full mx-auto py-6 max-w-sm" id="nav">
+    <div class="md:hidden flex items-center justify-center justify-between">
+      <div></div>
+      <a href="/" class="text-decoration-none"><div class="font-bold text-md">KAZUYA FAIZAD</div></a>
+
+      <div class="space-y-2">
+        <span class="block w-5 h-0.5 bg-gray-600" id="burger1"></span>
+        <span class="block w-8 h-0.5 bg-gray-600" id="burger2"></span>
+        <span class="block w-8 h-0.5 bg-gray-600" id="burger3"></span>
+      </div>
+    </div>
+  </nav>
 </header>
-    <div class="container astro-OEVHHUU5">
-      <h1 class="astro-OEVHHUU5">About Me</h1>
-      <div class="heroImg astro-OEVHHUU5">
+<!-- mobile menu -->
+<ul class="pt-8 mobile-menu bg-white w-full h-0 hidden overflow-hidden mt-1 backdrop-blur-md text-xl bg-opacity-75">
+  <li>
+    <a href="/about" class="flex border-b border-black py-5 hover:bg-golden transition duration-300 justify-center">About Me</a>
+  </li>
+  <li>
+    <a href="/works" class="flex border-b border-black py-5 hover:bg-golden transition duration-300 justify-center">Works</a>
+  </li>
+  <li>
+    <a href="https://github.com/kazuyafaizad" class="flex border-b border-black py-5 hover:bg-golden transition duration-300 justify-center">Github</a>
+  </li>
+  <li>
+    <a href="https://www.instagram.com/kazuyafaizad_/" class="flex border-b border-black py-5 hover:bg-golden transition duration-300 justify-center">Instagram</a>
+  </li>
+</ul>
+
+<script>
+  var menu = new TimelineMax({ paused: true, reversed: true });
+
+  menu
+    .to("#burger1", 0.2, { rotation: 50, ease: Sine.easeInOut, width: "100%" }, "cross")
+    .to("#burger2", 0.2, { scale: 0 }, "cross")
+    .to("#burger3", 0.2, { rotation: -50, ease: Sine.easeInOut, x: 0, y: -20 }, "cross")
+    .to(".mobile-menu", 0.6, {
+      height: "100vh",
+      display: "block",
+      ease: Sine.easeInOut,
+    });
+
+  function menuIn() {
+    if (menu.reversed()) {
+      menu.play();
+    } else {
+      menu.reverse();
+    }
+  }
+
+  document.querySelector("#nav").addEventListener("click", function () {
+    menuIn();
+  });
+</script>
+    <div class="container astro-7SIMDF2F">
+      <h1 class="px-3 astro-7SIMDF2F">About Me</h1>
+      <div class="heroImg astro-7SIMDF2F">
         <!-- <Image width="1400" height="350" src={hero} title="asd" alt="" /> -->
         <picture>
 	<source type="image/avif" srcset="/assets/IMG_0699.0bccf8a2_c3Xpq.avif 640w"><source type="image/webp" srcset="/assets/IMG_0699.0bccf8a2_UoMnc.webp 640w"><source type="image/png" srcset="/assets/IMG_0699.0bccf8a2_2jsbwE.png 640w">
-	<img src="/assets/IMG_0699.0bccf8a2_2jsbwE.png" loading="lazy" decoding="async" class="justify-center items-center flex my-gr-6 bg-black astro-OEVHHUU5">
+	<img src="/assets/IMG_0699.0bccf8a2_2jsbwE.png" loading="lazy" decoding="async" class="justify-center items-center flex my-gr-6 bg-black astro-7SIMDF2F">
 </picture>
       </div>
-      <div class="bio wrapper astro-OEVHHUU5">
-        <p class="astro-OEVHHUU5">
+      <div class="bio wrapper astro-7SIMDF2F">
+        <p class="astro-7SIMDF2F">
           Since 2016, I have been working as a web developer. Full-stack engineer with artistic approach that want to
           provide excellent value and the best user experience. Appreciate any idea sharing session and love to
           challenge it. Please check out my other links.
         </p>
-        <ul class="astro-OEVHHUU5">
-          <li class="astro-OEVHHUU5"><a href="https://github.com/kazuyafaizad" class="underline astro-OEVHHUU5">Github</a></li>
-          <li class="astro-OEVHHUU5"><a href="https://www.instagram.com/kazuyafaizad_" class="underline astro-OEVHHUU5">Instagram</a></li>
-          <li class="astro-OEVHHUU5">
-            <a href="https://www.linkedin.com/in/mohd-norfaizad-farhan/" class="underline astro-OEVHHUU5">LinkedIn</a>
+        <ul class="astro-7SIMDF2F">
+          <li class="astro-7SIMDF2F"><a href="https://github.com/kazuyafaizad" class="underline astro-7SIMDF2F">Github</a></li>
+          <li class="astro-7SIMDF2F"><a href="https://www.instagram.com/kazuyafaizad_" class="underline astro-7SIMDF2F">Instagram</a></li>
+          <li class="astro-7SIMDF2F">
+            <a href="https://www.linkedin.com/in/mohd-norfaizad-farhan/" class="underline astro-7SIMDF2F">LinkedIn</a>
           </li>
         </ul>
       </div>
