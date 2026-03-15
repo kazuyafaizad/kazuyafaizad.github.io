@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="fur" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B6914"/>
+      <stop offset="100%" style="stop-color:#C4A035"/>
+    </linearGradient>
+    <linearGradient id="belly" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8DCC4"/>
+      <stop offset="100%" style="stop-color:#D4C4A0"/>
+    </linearGradient>
+  </defs>
+  <!-- body -->
+  <ellipse cx="60" cy="72" rx="38" ry="32" fill="url(#fur)" stroke="#5C4A1A" stroke-width="1.5"/>
+  <!-- belly -->
+  <path d="M28 72 Q60 85 92 72 Q88 90 60 98 Q32 90 28 72Z" fill="url(#belly)" stroke="#5C4A1A" stroke-width="1"/>
+  <!-- face -->
+  <circle cx="60" cy="48" r="28" fill="url(#fur)" stroke="#5C4A1A" stroke-width="1.5"/>
+  <!-- eye patches -->
+  <ellipse cx="48" cy="42" rx="10" ry="8" fill="#2D2314"/>
+  <ellipse cx="72" cy="42" rx="10" ry="8" fill="#2D2314"/>
+  <!-- eyes -->
+  <circle cx="46" cy="42" r="3" fill="#FFF"/>
+  <circle cx="70" cy="42" r="3" fill="#FFF"/>
+  <!-- nose -->
+  <ellipse cx="60" cy="54" rx="5" ry="4" fill="#2D2314"/>
+  <!-- leaf (traditional tanuki) -->
+  <path d="M58 18 Q72 12 78 22 Q72 28 60 26 Q52 24 58 18Z" fill="#4A7C3E" stroke="#2D5A22" stroke-width="1"/>
+</svg>
